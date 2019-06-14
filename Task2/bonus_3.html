@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Тег <strong>&lt;figure&gt;</strong></h1>
+    <p>Элемент <strong>&lt;figure&gt;</strong> представляет собой самодостаточный блок контента с возможным заголовком, на который, как правило, ссылаются из основного потока документа.<br>
+       Этот блок может быть перемещён из основного потока документа без потери общего смысла документа. 
+       Данный тег используется для группирования любых элементов, например, изображений и подписей к ним.</p>
+    <h2 align="center"><i>Использование &lt;figure&gt; с изображением</i></h2>  
+    <p>Изображение без заголовка внутри элемента <strong>&lt;figure&gt;</strong>.</p>
+    <figure>
+        <img title="animal" src="http://html5doctor.com/wp-content/uploads/2010/03/orang-utan.jpg" alt="monkey">
+    </figure>
+    <p>Код:</p>
+    <p>
+        &lt;figure&gt; <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;  &lt;img title="animal" src="http://html5doctor.com/wp-content/uploads/2010/03/orang-utan.jpg" alt="monkey"&gt; <br>
+        &lt;figure&gt;
+    </p>
+    <hr>
+    <h2 align="center"><i><strong>&lt;figure&gt;</strong> с несколькими изображениями</i></h2>  
+    <p>Несколько изображений внутри одного <strong>&lt;figure&gt;</strong></p>
+    <figure>
+            <img src="http://html5doctor.com/wp-content/uploads/2010/03/kookaburra.jpg" alt="Кукабурра">
+            <img src="http://html5doctor.com/wp-content/uploads/2010/03/pelican.jpg" alt="Пеликан на пляже">
+            <img src="http://html5doctor.com/wp-content/uploads/2010/03/lorikeet.jpg" alt="Нахально смотрящий многоцветный лорикет">
+    </figure>
+    <p>Код:</p>
+    <p>
+            &lt;figure&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="http://html5doctor.com/wp-content/uploads/2010/03/kookaburra.jpg" alt="Кукабурра"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="http://html5doctor.com/wp-content/uploads/2010/03/pelican.jpg" alt="Пеликан на пляже"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="http://html5doctor.com/wp-content/uploads/2010/03/lorikeet.jpg" alt="Нахально смотрящий многоцветный лорикет"&gt;<br>
+            &lt;figure&gt;
+    </p>
+    <hr>
+    <h1 align="center">Тег &lt;figcaption&gt;</h1>
+    <p>Содержит описание для тега <strong>&lt;figure&gt;</strong>. Тег <strong>&lt;figcaption&gt;</strong> должен быть первым или последним элементом в группе.</p>
+    <h2 align="center"><i>Использование &lt;figcaption&gt;</i></h2>  
+    <figure>
+        <img src="https://imgc.artprintimages.com/img/print/adult-and-young-elephants-sunset-light_u-l-pxytar0.jpg?h=550&w=550&background=fbfbfb"
+                alt="Elephant at sunset">
+        <figcaption>An elephant at sunset</figcaption>
+    </figure>        
+    <p>Код:</p>
+    <p>
+            &lt;figure&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="https://imgc.artprintimages.com/img/print/adult-and-young-elephants-sunset-light_u-l-pxytar0.jpg?h=550&w=550&background=fbfbfb"<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; alt="Elephant at sunset"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; &lt;figcaption>An elephant at sunset&lt;/figcaption&gt;<br>
+            &lt;figure&gt;
+    </p>
+    <hr>
+    <h1 align="center">Плюсы и минусы использования &lt;figure&gt; и &lt;figurecaption&gt;</h1> 
+    <p>Нет необходимости ограничивать <strong>&lt;figure&gt;</strong> изображениями и примерами кода. Другое содержимое вполне подходит для использования, включая аудио, видео, графики, стихи или таблицы со статистикой.
+    При этом задействовать элемент <strong>&lt;figure&gt;</strong> не всегда может быть целесообразно. Например, графический баннер не должен верстаться с <strong>&lt;figure&gt;</strong>. Вместо этого просто используется элемент <strong>&lt;img&gt;</strong>.</p> 
+</body>
+</html>
