@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid blue;
+        }
+
+        td {
+            text-align: center;
+            padding: 5px;
+            border: 2px solid blue;
+        }
+
+        th {
+            padding: 5px;
+        }
+
+       .header {
+            background: #888888;
+            color: white;
+            border: none !important;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .sub {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Пример сложной таблицы
+    </h1>
+    <table><tbody>
+        <tr class="header">
+            <th>Название1</th>
+            <th>Название2</th>
+            <th>Еще навание</th>
+            <th>Куча элементов</th>
+            <th>Список1</th>
+            <th>Список2</th>
+        </tr>
+        <tr>
+            <td rowspan="11">JPMC</td>
+            <td rowspan="5" class="left">CST</td>
+            <td rowspan="3" class="left">CT</td>
+            <td class="left">ADS</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="left">BTO</td>
+            <td>2</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td class="left">CSI</td>
+            <td>3</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td rowspan="2">VCT</td>
+            <td class="left">ADS</td>
+            <td>4</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="left">BTO</td>
+            <td>5</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="sub">Sub Total</td>
+            <td>6</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="left">CST</td>
+            <td rowspan="3" class="left">CT</td>
+            <td class="left">ADS</td>
+            <td>7</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td class="left">BTO</td>
+            <td>8</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td class="left">CSI</td>
+            <td>9</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>VCT</td>
+            <td class="left">ADS</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="sub">Sub Total</td>
+            <td>11</td>
+            <td>15</td>
+        </tr></tbody>
+    </table>
+</body>
+</html>
