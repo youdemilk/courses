@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: cyan;
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .chess {
+        margin: auto;  
+        background: white;
+        font-weight: bold;
+        text-align: center;
+        border: 2px black solid;
+        border-collapse: collapse;
+    }
+
+    .horizontal {
+        width: 48px;
+        height: 24px;
+    }
+
+    .vertical {
+        width: 24px;
+        height: 48px;
+    }
+
+    .field {
+        width: 48px;
+        height: 48px;
+    }
+
+    .black {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .white {
+        background: white;
+    }
+
+    .pawn {
+        background-image: url(img/chess.png);
+        background-position: -240px 1px;
+    }
+
+    .rook {
+        background-image: url(img/chess.png);
+        background-position: -95px 1px;
+    }
+
+    .knight {
+        background-image: url(img/chess.png);
+        background-position: -192px 1px;
+    }
+
+    .bishop {
+        background-image: url(img/chess.png);
+        background-position: -145px 1px;
+    }
+
+    .queen {
+        background-image: url(img/chess.png);
+        background-position: -49px 1px;
+    }
+
+    .king {
+        background-image: url(img/chess.png);
+        background-position: 0px 1px;
+    }
+
+    .wpawn {
+        background-image: url(img/chess.png);
+        background-position: -240px -46px;
+    }
+
+    .wrook {
+        background-image: url(img/chess.png);
+        background-position:-97px -46px;
+    }
+
+    .wknight {
+        background-image: url(img/chess.png);
+        background-position: -192px -46px;
+    }
+
+    .wbishop {
+        background-image: url(img/chess.png);
+        background-position: -145px -46px;
+    }
+
+    .wqueen {
+        background-image: url(img/chess.png);
+        background-position: -49px -46px;
+    }
+
+    .wking {
+        background-image: url(img/chess.png);
+        background-position: 0px -46px;
+    }
+
+    .bottom {
+        border-bottom: 2px black solid;
+    }
+
+    .top {
+        border-top: 2px black solid;
+    }
+
+    .right {
+        border-right: 2px black solid;
+    }
+
+    .left {
+        border-left: 2px black solid;   
+    }
+</style>
+<body>
+    <h1 class="name">Шахматы</h1>
+        <table class="chess"><tbody>
+                <tr>
+                    <td></td>
+                    <td class="horizontal bottom">a</td>
+                    <td class="horizontal bottom">b</td>
+                    <td class="horizontal bottom">c</td>
+                    <td class="horizontal bottom">d</td>
+                    <td class="horizontal bottom">e</td>
+                    <td class="horizontal bottom">f</td>
+                    <td class="horizontal bottom">g</td>
+                    <td class="horizontal bottom">h</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="vertical right">8</td>
+                    <td class="field white rook"></td>
+                    <td class="field black knight"></td>
+                    <td class="field white bishop"></td>
+                    <td class="field black queen"></td>
+                    <td class="field white king"></td>
+                    <td class="field black bishop"></td>
+                    <td class="field white knight"></td>
+                    <td class="field black rook"></td>
+                    <td class="vertical left">8</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">7</td>
+                    <td class="field black pawn"></td>
+                    <td class="field white pawn"></td>
+                    <td class="field black pawn"></td>
+                    <td class="field white pawn"></td>
+                    <td class="field black pawn"></td>
+                    <td class="field white pawn"></td>
+                    <td class="field black pawn"></td>
+                    <td class="field white pawn"></td>
+                    <td class="vertical left">7</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">6</td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="vertical left">6</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">5</td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="vertical left">5</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">4</td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="vertical left">4</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">3</td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="field black"></td>
+                    <td class="field white"></td>
+                    <td class="vertical left">3</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">2</td>
+                    <td class="field white wpawn"></td>
+                    <td class="field black wpawn"></td>
+                    <td class="field white wpawn"></td>
+                    <td class="field black wpawn"></td>
+                    <td class="field white wpawn"></td>
+                    <td class="field black wpawn"></td>
+                    <td class="field white wpawn"></td>
+                    <td class="field black wpawn"></td>
+                    <td class="vertical left">2</td>
+                </tr>
+                <tr>
+                    <td class="vertical right">1</td>
+                    <td class="field black wrook"></td>
+                    <td class="field white wknight"></td>
+                    <td class="field black wbishop"></td>
+                    <td class="field white wqueen"></td>
+                    <td class="field black wking"></td>
+                    <td class="field white wbishop"></td>
+                    <td class="field black wknight"></td>
+                    <td class="field white wrook"></td>
+                    <td class="vertical left">1</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="horizontal top">a</td>
+                    <td class="horizontal top">b</td>
+                    <td class="horizontal top">c</td>
+                    <td class="horizontal top">d</td>
+                    <td class="horizontal top">e</td>
+                    <td class="horizontal top">f</td>
+                    <td class="horizontal top">g</td>
+                    <td class="horizontal top">h</td>
+                    <td></td>
+                </tr></tbody>
+            </table>
+</body>
+</html>
