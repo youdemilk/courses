@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: cyan;
+        margin: 0;
+    }
+
+    .one-block {
+        width: 400px;
+        height: 400px;
+        background: yellow;
+        margin: 50px auto;
+    }
+
+    @media screen and (max-width: 1280px) {
+        .one-block {
+            background: red;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .one-block {
+            border-radius: 50px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .one-block {
+            background: yellow;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .one-block {
+            border: 2px solid red;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .one-block {
+            border-radius: 50%;
+            width: 310px;
+			height: 310px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .one-block {
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            margin: 0;
+        }
+    }
+</style>
+<body>
+    <div class="one-block"></div>
+</body>
+</html>
