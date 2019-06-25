@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .border {
+        margin: 200px auto;
+        width: 385px;
+        height: 185px;
+        border-right: 15px solid green;
+        border-bottom: 15px solid green;
+        position: relative;
+    }
+
+    .border::after {
+        content: " ";
+        width: 395px;
+        height: 195px;
+        position: absolute;
+        border-right: 5px solid darkgreen;
+        border-bottom: 5px solid darkgreen;
+        bottom: -20px;
+        left: 5px;
+    }
+
+    .border::before{
+        content: " ";
+        width: 380px;
+        height: 180px;
+        position: absolute;
+        border: 10px solid lightgreen;
+        right: -10px;
+        bottom: -10px;
+    }
+</style>
+<body>       
+</head>
+<body>
+    <div class="border">
+        <img src="http://placehold.it/380x180" alt="img">
+    </div>
+</body>
+</body>
+</html>
