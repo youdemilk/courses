@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #d3d3d3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form {
+        margin: 25px auto;
+        background: white;
+        width: 600px;
+        padding: 35px 20px 20px 45px;
+    }
+
+    p {
+        margin-bottom: 6px; 
+    }
+
+    textarea {
+        margin: 0px; 
+        width: 580px;
+        height: 122px;
+        padding-left: 5px;
+    }
+
+    .submit {
+        margin-bottom: 40px;
+    }
+
+    .inp {
+        padding-left: 5px;
+        border:2px solid #d3d3d3;
+        height: 30px;
+        width: 290px;
+    }
+</style>
+<body>
+    <div class="form">
+        <h3>Обратная связь</h3>
+        <p>Имя:</p>
+        <input class="inp" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя" required><br>
+        <p>Ваш email:</p>
+        <input class="inp" type="email" name="email" id="email" placeholder="Введите адрес вашей почты" required><br>
+        <p>Ваш телефон:</p>
+        <input class="inp" type="email" name="email" id="email" placeholder="Введите номер телефона" required><br>
+        <p>Сообщение:</p>
+        <textarea name="message" id="message" placeholder="Текст сообщения..." required></textarea><br>
+        <p class="submit"><input type="submit" id="submit_button"  value="Отправить"></p>	
+    </div>
+</body>
+</html>
