@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        background: #d3d3d3;
+    }
+
+    .form {
+        margin: 25px auto;
+        background: white;
+        width: 500px;
+        padding: 35px 20px 20px 20px;
+        border-radius: 10px;
+        border: 2px solid #6499ff;
+        position: relative;
+    }
+
+    p {
+        margin-left: 10px;
+        margin-bottom: 6px; 
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    textarea {
+        margin: 0px; 
+        width: 446px;
+        height: 122px;
+        padding-left: 40px;
+        border-radius: 5px;
+        padding-top: 8px;
+        font-weight: bold;
+    }
+
+    .submit {
+        margin-left:0;
+        margin-bottom: 0; 
+        text-align: center;
+    }
+
+    .inp {
+        padding-left: 40px;
+        border:2px solid #d3d3d3;
+        height: 30px;
+        width: 456px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .inp:focus {
+        border: 2px solid #6499ff;
+        border-radius: 5px;
+    }
+
+    #submit_button {
+        width: 210px;
+        color: white;
+        height: 35px;
+        border-radius: 5px;
+        background: #6499ff;
+        border: 2px solid #6499ff;
+        font-size: 15px;
+    }
+
+    #name {
+        margin-top: 40px;
+    }
+
+    .header {
+        background: #6499ff;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        color: white;
+        text-align: center;
+        height: 50px;
+    }
+
+    .header h2 {
+        margin: 0;
+        padding-top: 7px;
+    }
+
+    .name {
+        background: url(img/home.png) no-repeat;
+        background-position: 70px 7px;
+        width: 400px;
+        margin: 0px 132px 0 90px; 
+    }
+
+    input#firstname {
+        background: url(img/avatar.png) no-repeat;
+        background-position: 5px 4px;
+    }
+
+    input#email {
+        background: url(img/email.png) no-repeat;
+        background-position: 5px 4px;
+    }
+
+    input#phone {
+        background: url(img/smartphone.png) no-repeat;
+        background-position: 5px 4px;
+    }
+
+    textarea#message {
+        background: url(img/pen.png) no-repeat;
+        background-position: 5px 4px;
+    }
+
+    .form_changer div{
+        display: inline-block;
+    }
+
+    .form_changer p {
+        display: inline-block;
+    }
+
+    .form_changer input {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .form_changer input#firstname {
+        margin-left: 90px;
+    }
+
+    .form_changer input#email {
+        margin-left: 84px;
+    }
+
+    .form_changer input#phone {
+        margin-left: 64px;
+    }
+
+    .form_changer .submit {
+        display: block;
+    }
+
+    .form_changer textarea{
+        margin-left: 10px;
+    }
+</style>
+<body>
+    <div class="form form_changer">
+        <div class="header">
+            <div class="name">
+                <h2>Обратная связь</h2>
+            </div>
+        </div>
+        <div>
+            <p id="name">Имя:</p>
+            <input class="inp" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя" required>
+        </div>
+        <div> 
+            <p>Email:</p>
+            <input class="inp" type="email" name="email" id="email" placeholder="Введите адрес вашей почты" required>
+        </div>
+        <div>
+            <p>Телефон:</p>
+            <input class="inp" type="email" name="email" id="phone" placeholder="Введите номер телефона" required>
+        </div>  <br>
+        <p>Сообщение:</p>
+        <textarea name="message" id="message" placeholder="Текст сообщения" required></textarea><br>
+        <p class="submit"><input type="submit" id="submit_button"  value="Отправить"></p>	
+    </div>
+</body>
+</html>
