@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: rgb(240, 241, 241);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        color: gray;
+    }
+
+    strong {
+        color: rgb(99, 99, 99);
+    }
+
+    .comment {
+        width: 650px;
+        position: relative;
+    }
+
+    .avatar {
+        background: white;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        float: left;
+        position: relative;
+        border-radius: 2px;
+    }
+
+    .message {
+        width: 510px;
+        background: white;
+        border-radius: 5px;
+        padding: 0 0 0 10px;
+        margin-left: 12px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .ans {
+        width: 650px;
+        position: absolute;
+    }
+
+    .ans {
+        left: 80px;
+        width: 620px;
+        position: absolute;
+	}
+    
+    .user .message{ 
+        width: 438px;
+    }
+
+    .ans .avatar::before {
+        content: "";  
+        position: absolute; 
+        border: 4px solid transparent; 
+        border-left: 4px solid darkgray; 
+        top: 49%;
+        transform: translateY(-50%);
+        left: -4px;
+    } 
+
+    .ans .avatar::after {
+        content: "";  
+        position: absolute; 
+        border-bottom: 1px solid darkgray; 
+        border-left: 1px solid darkgray; 
+        width: 65%;
+        height: 153%;
+        top: -105%;
+        right: 105%;
+    } 
+
+    .user:last-child .avatar::after {
+        content: "";  
+        position: absolute; 
+        border-bottom: 1px solid darkgray; 
+        border-left: 1px solid darkgray; 
+        width:70%;
+        height: 477%;
+        top: -430%;
+        right: 100%;
+    }
+</style>
+<body>
+    <div class="comment">
+        <div class="avatar"><img src="img/avatar.gif" alt="avatar"></div>
+        <div class="message">
+            <p><strong>User1231231</strong> спрашивает:</p>
+            <p>
+                Почему во многих макетах и тестовых заданиях используется текст<br>
+                "Lorem ipsum dolor sit amet"???
+            </p>
+        </div>
+    </div>
+    <div class="ans">
+        <div class="user">
+            <div class="avatar"><img src="img/avatar.gif" alt="avatar"></div>
+            <div class="message">
+                <p><strong>User444</strong> отвечает:</p>
+                <p>
+                    Аннотация<br>
+                    Фраза "Lorem ipsum dolor sit amet consectetuer"<br>
+                    впервые появилась в справке Microsoft Word. Фраза<br>
+                    производит впечатление осмысленной латинской<br>
+                    поговорки. На самом деле это не так.
+
+                </p>
+            </div>
+        </div>
+        <div class="user">
+            <div class="avatar"><img src="img/avatar.gif" alt="avatar"></div>
+            <div class="message">
+                <p><strong>User8678678</strong> отвечает:</p>
+                <p>
+                    Lorem Ipsum Dolor sit amet. =)))
+                </p>
+            </div>
+        </div>
+        <div class="user">
+            <div class="avatar"><img src="img/avatar.gif" alt="avatar"></div>
+            <div class="message">
+                <p><strong>User1234567</strong> отвечает:</p>
+                <p>
+                    Хотя фраза и бессмысленна, она имеет давнюю<br>
+                    историю. Фраза использовалась печатниками многие<br>
+                    столетия для демонстрации наиболее важных<br>
+                    особенностей своих шрифтов. Она использовалась<br>
+                    потому, что символы составляют сложные по<br>
+                    межсимвольным промежуткам и по комбинациям<br>
+                    символов пары, наилучшим образом демонстрирующие<br>
+                    преимущества данного начертания.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
