@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        min-width: 320px;
+    }
+
+    footer {
+        background: #68a4c4;
+        text-align: left;
+        color: white;
+        padding: 10px 70px 10px 70px;
+        
+    }
+
+    .image {
+        position: relative;    
+        height: 200px;  
+        background: url(img/senya.jpg) no-repeat;
+        background-position: center;
+        background-size: 95%;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .header {
+        text-align: center;
+        background: #c2c2c2;
+        margin: 0;
+    }
+
+    .header h1 {
+        margin:0;
+        padding: 40px 0;
+        color: #2a292a;
+    }
+
+    .info {
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    
+    .news {
+        display: inline-block;
+        height:200px;
+        width: 200px;
+        text-align: center;
+        background: #f8f8f8;
+        margin: 20px 10px;
+        vertical-align: middle;
+        position: relative;
+        padding: 10px;
+    }
+
+    .news p {
+        color: #b7b6b8;
+    }
+
+    .news h3 {
+        color: #2a292a;
+    }
+
+    .next {
+        background: #68a4c4;
+        position:absolute;
+        bottom:0;
+        right:0;
+        width: 100%;
+        padding: 17px 0;
+    }
+
+    .next a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .info h1 {
+        color: #2a292a;
+        text-align: left;
+    }
+
+    .descr {
+        text-align: left;
+        color: #b7b6b8;
+    }
+
+    @media screen and (max-width: 768px) {
+        .news {
+            width: 97%;
+            height: 150px;
+            margin: 20px 0 0 0;
+        }
+
+        .news:first-child {
+            margin: 50px 0 0 0;
+        }
+
+        .info {
+            padding: 0 20px;
+        }
+
+        .descr:last-child {
+            margin-bottom: 80px;
+        }
+    }
+</style>
+<body>
+    <div class="image"></div>
+    <div class="header">
+        <h1>Заголовок первого уровня</h1>
+    </div>
+    <div class="info">
+        <div class="news">
+            <h3>Новость 1</h3>
+            <p>
+                Donec sollicitudin elit nec urna volutpat gravida. Proin.
+            </p>
+            <div class="next">
+                <a href="#">Читать далее</a>
+            </div>
+        </div>
+        <div class="news">
+            <h3>Новость 2</h3>
+            <p>
+                Donec sollicitudin elit nec urna volutpat gravida. Proin.
+            </p>
+            <div class="next">
+                <a href="#">Читать далее</a>
+            </div>
+        </div>
+        <div class="news">
+            <h3>Новость 3</h3>
+            <p>
+                Donec sollicitudin elit nec urna volutpat gravida. Proin.
+            </p>
+            <div class="next">
+                <a href="#">Читать далее</a>
+            </div>
+        </div>
+        <div class="news">
+            <h3>Новость 4</h3>
+            <p>
+                Donec sollicitudin elit nec urna volutpat gravida. Proin.
+            </p>
+            <div class="next">
+                <a href="#">Читать далее</a>
+            </div>
+        </div>
+        <h1>Что такое Lorem Ipsum?</h1>
+        <p class="descr">Lorem ipsum dolor sit amet... Если вы как-то связаны с дизайном, наверняка вы видели эту фразу сотни раз. Известная как «рыба» или «латинская заготовка», она используется для имитации текстового наполнения сайта, лендига, рекламы или продукта, чтобы дизайнерам не приходилось ждать готового контента, а клиенты не отвлекались от графической реализации на чтение непонятного текста:</p>
+        <h1>Почему он используется?</h1>
+        <p class="descr">Lorem ipsum dolor sit amet... Если вы как-то связаны с дизайном, наверняка вы видели эту фразу сотни раз. Известная как «рыба» или «латинская заготовка», она используется для имитации текстового наполнения сайта, лендига, рекламы или продукта, чтобы дизайнерам не приходилось ждать готового контента, а клиенты не отвлекались от графической реализации на чтение непонятного текста:</p>
+        <h1>Откуда он появился?</h1>
+        <p class="descr">Morbi nec mi eu enim tincidunt tempus. Duis nec iaculis sapien. Sed pulvinar eros vitae nisi pretium, eget rhoncus metus ornare. Donec condimentum sodales sollicitudin. Aenean molestie rhoncus metus, non fermentum nulla sagittis non. Nullam porta lorem at diam efficitur, non aliquet neque consequat. Nulla ut nibh eu sapien convallis commodo sed vitae urna. Pellentesque gravida interdum dui eu rhoncus. Suspendisse feugiat lacus ac sodales rutrum. Vivamus imperdiet, ante ut hendrerit porttitor, ex ante scelerisque nisl, sit amet dictum quam turpis eget augue. In hac habitasse platea dictumst. Pellentesque nisi sem, aliquet sed turpis viverra, tristique pretium enim.</p>
+        <p class="descr">Sed vel augue libero. Quisque venenatis ligula id facilisis suscipit. Aenean sollicitudin tincidunt odio et egestas. Nulla eleifend gravida imperdiet. Etiam dignissim, elit sed tincidunt convallis, nulla nunc auctor velit, eget posuere magna dui ac risus. Aenean sodales sodales leo sed lacinia. Vestibulum efficitur, nulla ut accumsan ultricies, velit turpis malesuada lacus, ac ullamcorper odio nunc et dui. Curabitur accumsan lectus a odio volutpat imperdiet.</p>
+        <h1>Где его взять?</h1>
+        <p class="descr">Lorem ipsum dolor sit amet... Если вы как-то связаны с дизайном, наверняка вы видели эту фразу сотни раз. Известная как «рыба» или «латинская заготовка», она используется для имитации текстового наполнения сайта, лендига, рекламы или продукта, чтобы дизайнерам не приходилось ждать готового контента, а клиенты не отвлекались от графической реализации на чтение непонятного текста:</p>
+    </div>
+    <footer>
+        <p>@Копирайт 2019</p>
+    </footer>
+</body>
+</html>
