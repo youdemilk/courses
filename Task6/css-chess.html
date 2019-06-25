@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>css chess</title>
+  <style>
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+  }
+
+  tr:nth-child(odd) td:nth-child(even) {
+			background: black;
+	}
+
+  tr:nth-child(even) td:nth-child(odd) {
+			background: black;
+  }
+
+  .chess tr:first-child td ,
+	.chess tr:last-child td {
+			background: rgb(144, 238, 144);
+      height: 25px;    
+	}
+
+  .chess tr td:first-child,
+	.chess tr td:last-child {
+			background: rgb(144, 238, 144);
+      width: 25px;
+	}
+</style>
+</head>
+<body>
+  <table class="chess">
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+  </tr>
+  </table>
+
+</body>
+</html>
