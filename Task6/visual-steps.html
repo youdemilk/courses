@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        padding: 10px 15px;
+        border-radius: 100%;
+	}
+
+    .list li {
+        display: inline-block;
+        border: 2px solid lightgrey;
+        border-radius: 100%;
+        margin-left: 25px;
+        position: relative;
+        background: rgb(206, 206, 205);
+    }
+
+    .done div{
+        background: rgb(189, 222, 56);
+        color: white;
+    }
+
+    li:nth-child(4) div {
+        background: purple;
+        color: white;
+    }
+
+    div::after {
+        content: " ";
+        border-bottom: 3px solid lightgrey;
+        position: absolute;
+        width: 33px;
+        right: -50px;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+
+    li:last-child div::after {
+        display: none;
+    }
+</style>
+<body>
+    <ul class="list">
+        <li class="done"><div>1</div></li>
+        <li class="done"><div>2</div></li>
+        <li class="done"><div>3</div></li>
+        <li><div>4</div></li>
+        <li><div>5</div></li>
+    </ul>
+</body>
+</html>
