@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .tb {
+        border-collapse: collapse;
+        height: 100vh;
+    }
+
+    .headfoot {
+        background: rgb(173, 216, 230);
+        width: 100%;
+        text-align: center;
+        color: blue;
+        height: 10%;
+    }
+
+    .list {
+        background: rgb(240, 230, 140);
+        min-width: 250px;
+        height: 80%;
+        vertical-align: top;
+    }
+
+    .main {
+        font-weight: bold;
+        text-indent: 1em;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .football img {
+        float: left;
+        padding-right: 25px;
+    }
+
+    .football {
+        vertical-align: top;
+        padding: 0 25px 25px 25px;
+        background-image: url(img/ball.png);
+        background-position: right;
+        background-repeat: repeat-y; 
+        background-size: 100px;
+        height: 80%;
+    }
+</style>
+<body>
+    <table class="tb"><tbody>
+        <tr>
+            <td colspan="2" class="headfoot"><h1>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h1></td>
+        </tr>
+        <tr>
+            <td class="list">
+                <h3 class="main">Виды спорта:</h3> 
+                <ul>
+                    <li><a href="#">конькобежный спорт</a></li>
+                    <li><a href="#">биатлон</a></li>
+                    <li><a href="#">футбол</a></li>
+                    <li><a href="#">стрельба из лука</a></li>
+                    <li><a href="#">прыжки в длину</a></li>
+                    <li><a href="#">прыжки в высоту</a></li>
+                </ul>
+            </td>
+            <td class="football">
+                <h1>Футбол</h1>
+                <img src="img/game.png" alt="Игра">
+                <p>
+                    Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела (кроме рук) большее количество раз,
+                    чем команда соперника.
+                </p>
+                <p>
+                    Есть 17 официальных правил игры, каждое из которых содержит список оговорок, и руководящих принципов. Эти правила предназначены для применения на всех
+                    уровнях футбола, хотя есть некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы очень
+                    часто формулировались в общих чертах, которые позволяют упростить их применения в зависимости от характера игры.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="headfoot"><h1>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h1></td>
+        </tr></tbody>
+    </table>
+</body>
+</html>
