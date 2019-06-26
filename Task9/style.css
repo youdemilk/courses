@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?obqfuw');
+  src:  url('fonts/icomoon.eot?obqfuw#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?obqfuw') format('truetype'),
+        url('fonts/icomoon.woff?obqfuw') format('woff'),
+        url('fonts/icomoon.svg?obqfuw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download:before {
+  content: "\e907";
+}
+.icon-home3:before {
+  content: "\e908";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-film:before {
+  content: "\e913";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter1:before {
+  content: "\ea96";
+}
+.icon-steam2:before {
+  content: "\eaad";
+}
+.icon-appleinc:before {
+  content: "\eabe";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-chrome:before {
+  content: "\ead9";
+}
+.icon-firefox:before {
+  content: "\eada";
+}
+.icon-IE:before {
+  content: "\eadb";
+}
+.icon-opera:before {
+  content: "\eade";
+}
+.icon-css3:before {
+  content: "\eae6";
+}
+.icon-google:before {
+  content: "\e901";
+}
+.icon-safari:before {
+  content: "\e909";
+}
+.icon-feed:before {
+  content: "\e902";
+}
+.icon-rss:before {
+  content: "\e902";
+}
+.icon-html5:before {
+  content: "\e903";
+}
+.icon-github-alt:before {
+  content: "\e904";
+}
+.icon-pinterest-square:before {
+  content: "\e905";
+}
+.icon-twitter:before {
+  content: "\e906";
+}
+.icon-facebook1:before {
+  content: "\e900";
+}
+
+.attr {
+  color: white;
+  font-size: 50px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, 35%);
+}
+
+.back {
+  background: #444444;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+  box-shadow: 0 5px 0 black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 43px;
+  font-weight: lighter;
+}
+
+.wrapper {
+  width: 300px;
+  height: 80px;
+  margin: 10px 0 10px 0;
+  padding: 0 ;
+  display: inline-block;
+  background: orange;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.descr {
+  display: inline-block;
+  padding: 0 0 0 10px;
+}
+
+
+h3 {
+  padding: 0;
+  color: white;
+  font-weight: normal;
+  margin: 15px 0 10px 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.container {
+  background: #ebebeb;
+  padding: 20px 20px 80px 20px;
+  width: 1500px;
+  margin: 30px auto;
+  vertical-align: middle;
+}
+
+.container_div {
+  margin: 0 auto;
+  text-align: center;
+}
