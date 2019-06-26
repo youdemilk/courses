@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: url(img/wallpaper.jpg);
+        margin: 0;
+    }
+
+    .container {
+        position: fixed;
+        width: 600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        background: #ff5335;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        color: white;
+        position: absolute;
+        top: 56%;
+        left: 86%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #ff7e68;
+    }
+
+    .btn p {
+        text-shadow: 1px 1px 2px black; 
+    }
+
+    .tape {
+        display: inline;
+        position: absolute;
+        background: black;
+        opacity: 0.15;
+        width: 350px;
+        height: 30px;
+        left: 50%;
+        transform: translate(-50%, -460%);
+        z-index: 10;
+    }
+
+    .form {
+        width: 400px;
+        background: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-shadow: 0 5px 5px -1px rgba(0,0,0,0.5);
+    }
+
+    .auth {
+        display: inline-block;
+    }
+
+    .auth h3 {
+        font-weight: bold;
+    }
+
+    .name {
+        display: inline-block;
+        font-family: 'Roboto Condensed', sans-serif;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .border:first-child {
+        position: absolute;
+        width: 50px;
+        border-top: 1px solid black;
+        left: 50px;
+        top: 30px;
+    }
+
+    .border:last-child {
+        position: absolute;
+        width: 50px;
+        border-top: 1px solid black;
+        right: 50px;
+        bottom: 30px;
+    }
+
+    .enter {
+        background: #ff7e68;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .wrapper {
+        width: 100%;
+        text-align: center;
+        margin: 2px;
+    }
+
+    .wrapper input {
+        width: 320px;
+        height: 40px;
+        background: #ffd5ce;
+        border: none;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+
+    input:focus {
+        background: white;
+    }
+
+    .btn:focus {
+        border: 5px solid #ff5335;
+    }
+
+    .btn:active {
+        background: #FFB9AE;
+        padding:5px;
+    }
+
+    #login {
+        border-top-left-radius: 7px;   
+        border-top-right-radius: 7px; 
+    }
+
+    #password {
+        border-bottom-left-radius: 7px;  
+        border-bottom-right-radius: 7px; 
+    }
+
+    .help {
+        margin-top: 10px;
+    }
+
+    .help h4 {
+        opacity: 0.9;
+        font-weight:normal;
+        text-align: center;
+        margin: 0;    
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="tape"></div>
+        <div class="form effect">
+            <div class="name">
+                <div class="border"></div>
+                <div class="auth">
+                    <h3>АВТОРИЗИРУЙТЕСЬ</h3>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div class="enter">
+                <div class="wrapper">
+                    <input type="text" name="login" id="login" placeholder="Логин" required>
+                </div>
+                <div class="wrapper">
+                    <input type="password" name="password" id="password" placeholder="Пароль" required>
+                </div>
+                <a href="#" class="btn"><p>&#8594;</p></a>
+                <div class="help">
+                    <h4>Забыли логин или пароль? <a href="#" >Напомним!</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
