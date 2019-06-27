@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #f8f9f8;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .wrapper {
+        width: 1000px;
+        height: 420px;
+        background: white;
+        margin: 50px auto;
+        padding: 40px 40px 0 40px;
+        box-shadow: 1px 3px 10px #d7d7d7;
+    }
+   
+    .container {
+        width: 100%;
+        height: 25px;
+        background: #eeeeee;
+        border-radius: 20px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+        position: relative;
+    }
+
+    .container span {
+        height: 20px;   
+        display: inline-block;
+        top: 2px;
+        left: 2px;
+        bottom: 2px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    @keyframes progress-anim-1 {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 75%;
+        }
+   }
+
+   @keyframes progress-anim-2 {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 65%;
+        }
+   }
+
+   @keyframes progress-anim-3 {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 55%;
+        }
+   }
+
+   @keyframes progress-anim-4 {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 45%;
+        }
+   }
+
+    .progressbar h3 {
+        margin-bottom: 2px;
+        margin-top: 25px;
+    }
+
+    .head {
+        margin-bottom: 35px;
+    }
+
+    #html span{
+        background: #ffb74b;
+        width: 75%;
+        animation: progress-anim-1 1s;
+        animation-timing-function: steps(10, end);
+        animation-delay: 3s;
+    }
+
+    #css span {
+        background: #9574ce;
+        width: 65%;
+        animation: progress-anim-2 1s;
+        animation-timing-function: steps(10, end);
+        animation-delay: 3s;
+    }
+
+    #javascript span {
+        background: #f0534f;
+        width: 55%;
+        animation: progress-anim-3 1s;
+        animation-timing-function: steps(10, end);
+        animation-delay: 3s;
+    }
+
+    #jquery span {
+        background: #65bb69;
+        width: 45%;
+        animation: progress-anim-4 1s;
+        animation-timing-function: steps(10, end);
+        animation-delay: 3s;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <h3 class="head">Мои знания:</h3>
+        <div class="progressbar">
+            <h3>HTML</h3>
+         <div class="container" id="html">
+            <span></span>
+         </div>
+           
+        </div>
+        <div class="progressbar">
+            <h3>CSS</h3>
+            <div class="container" id="css">
+                    <span></span>
+            </div>
+        </div>
+        <div class="progressbar">
+            <h3>JavaScript</h3>
+            <div class="container" id="javascript">
+                <span></span> 
+            </div>
+        </div>
+        <div class="progressbar">
+            <h3>jQuery</h3>
+            <div class="container" id="jquery">
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
