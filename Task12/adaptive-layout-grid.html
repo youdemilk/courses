@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif; 
+    }
+
+    .container {
+        max-width: 1520px;
+        margin: 100px auto;
+    }
+
+    .grid1 {
+        display: grid;
+        grid-template-columns: 1fr 13fr;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "aside_left main aside_right";
+    }
+
+    footer {
+        display: grid;
+        background: #90ee90;
+        grid-template-columns: 1fr 7fr;
+    }
+
+    footer p {
+        font-weight: bold;
+        padding-left: 20px;
+        flex: 1;
+    }
+
+    footer ul {
+        display: inline-block;
+        text-align: end;
+    }
+
+    .social li {
+        display: inline-block;
+        margin-left: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+
+    .logo {
+        background: #808080;
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        display: inline-block;
+        text-align: end;
+        padding-top: 19px;
+        width: 100%;
+        background: #00bfff;
+        font-weight: bold;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    aside h3 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .main {
+        background: #00ffff;
+        padding: 20px;
+    }
+
+    .main p {
+        font-weight: bold;
+    }
+
+    aside {
+        font-weight: bold;
+    }
+
+    .aside_left {
+        background: #ffd700;
+        grid-area: aside_left;
+    }
+
+    .aside_right {
+        background: #ff69b4;
+        grid-area: aside_right;
+    }
+
+    @media screen and (max-width: 760px) {
+        .container {
+            margin: 25px 0 0 0;
+        }
+
+        .grid1 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        nav a {
+            padding-right: 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: grid;
+            grid-template-columns: 4fr 3fr 4fr;
+            grid-template-rows: 1fr;
+            background: #00bfff;
+            height: 62px;
+            justify-items: center;
+            align-items: center
+        }
+
+        .logo h3 {
+            display: grid;
+            grid-column: 2;
+            justify-items: center;
+            align-items: center;
+            background: #808080;
+            width: 200px;
+            height: 100%;
+            margin: 0;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 50px;
+            grid-template-areas: "main main" "aside_left aside_right";
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        aside {
+            display: grid;
+            width: 100%;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .social {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .social li {
+            padding-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .grid1 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr; 
+            padding: 0;
+        }
+
+        nav a {
+            box-shadow: inset 0px 1px 1px rgba(154, 147, 140, 0.5);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;   
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;         
+        }
+
+        footer p {
+            text-align: center;
+            padding-left: 0; 
+        }
+
+        footer ul {
+           
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .logo h3 {
+            width: 150px;
+        }
+        
+        .social {
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr; 
+        }
+
+        .social li {
+            box-shadow: inset 0px 1px 1px rgba(154, 147, 140, 0.5);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+            <div class="grid1">
+                <div class="logo"><h3>Logo</h3></div>
+                <nav>
+                    <a href="#">Главная</a>
+                    <a href="#">О нас</a>
+                    <a href="#">Продукты</a>
+                    <a href="#">Контакты</a>
+                </nav>
+            </div>
+            <div class="grid2">
+                <div class="main">
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nisi tristique, mattis nibh ac, cursus enim. In sit amet consequat leo. Mauris tincidunt quam et justo
+                        porta, vitae aliquet est ornare. Cras venenatis nulla lacus, ut convallis purus semper a. Etiam volutpat metus ac lobortis viverra. Nullam quis tellus quam. Fusce elementum 
+                        lobortis placerat. In cursus faucibus neque, at auctor ex convallis quis. Vivamus pharetra, felis nec cursus gravida, ex arcu aliquet orci, hendrerit pellentesque eros tortor 
+                        in ipsum. Fusce at eros venenatis, lacinia turpis quis, posuere risus. Maecenas ante purus, pharetra in mollis eget, egestas in tellus. Duis tincidunt velit id turpis 
+                        pellentesque tristique quis in mauris. Cras pellentesque eget justo ut varius. Suspendisse est metus, iaculis id aliquet sit amet, cursus eu erat. Fusce convallis felis non 
+                        finibus facilisis.
+                    </p>
+                    <h2>Why do we use it?</h2>
+                    <p>
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec in tellus lacus. In tempor, tortor quis fringilla condimentum, ligula urna 
+                        scelerisque nisl, ac mattis felis turpis feugiat nulla. Vivamus vel tellus mauris. Sed eu mi diam. Nullam scelerisque condimentum velit, vitae mollis nisi rutrum a. Maecenas 
+                        eget nisl vitae dolor lacinia mattis nec ut diam. Integer feugiat tincidunt odio et congue. Aliquam at euismod est, id egestas orci. Nullam efficitur quam ut ante lacinia 
+                        maximus. Nam tincidunt felis eget odio sagittis eleifend. Nam lobortis ut erat vitae posuere. Curabitur quis risus euismod, lacinia tortor et, commodo mi. Donec et nulla purus. 
+                        Vestibulum rutrum lorem porttitor enim iaculis, non fringilla libero placerat.
+                    </p>    
+                </div>
+                    <aside class="aside_left"><h3>Aside type 1</h3></aside>
+                    <aside class="aside_right"><h3>Aside type 2</h3></aside>
+            </div>
+            
+            <footer>
+                <p>@ Copyright 2019</p>
+                <ul class="social">
+                    <li>Twitter</li>
+                    <li>Vkontakte</li>
+                    <li>Facebook</li>
+                </ul>
+            </footer>
+        </div>
+</body>
+</html>
